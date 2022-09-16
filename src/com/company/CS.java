@@ -17,10 +17,10 @@ public class CS {
         int d1 = 25;
         int midkills1 = (a1 + b1 + c1 + e1 + d1) / 5;
         int whotop = midkills - midkills1;
-        System.out.println(midkills);
-        System.out.println(midkills1);
-        System.out.println(whotop);
-        System.out.println("Перемогла команда " + name + " яка набрала " + midkills + " очків");
+        System.out.println("Среднеарифметическое команды "+ name + " = " + midkills + " очков");
+        System.out.println("Среднеарифметическое команды "+ name1 + " = " + midkills1 + " очков");
+        System.out.println("Разница между командами = "+ whotop);
+        System.out.println("Победила команда " + name + " которая набрала " + midkills + " очков");
 
     }
 
