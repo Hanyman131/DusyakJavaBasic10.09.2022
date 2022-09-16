@@ -11,7 +11,7 @@ public class China {
         int d = 9;
         int e = 35;
         int f = 12;
-        double summ_min = 860*(d+e+f)*1.5;
+       double summ_min = 860*(d+e+f)*1.5;
 
         double summ_li_min = summ_li + summ_min;
         System.out.println("Общий урон династии " + (name) + " = " + (summ_li));
