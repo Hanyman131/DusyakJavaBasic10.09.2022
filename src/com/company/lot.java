@@ -1,30 +1,27 @@
-//package com.company;
-//
-//public class lot {
-//    public static void main(String[] args) {
-//        int myArray[];
-//        int myArray1[];
-//        int result = 0;
-//
-//const randomArr = (arr) => {
-//            for (int i = 0; i < 7; i++) {
-//                int randomDigit = (int) (Math.random() * 10);
-//            }
-//            arr.sort()
-//        }
-//        randomArr(first)
-//        randomArr(second)
-//const arrs = (arr1, arr2) =>{
-//            int res = 0;
-//            for (int i = 0; i < 7; i++) {
-//                if (arr1[i] == arr2[i]) {
-//                    res += 1
-//                    /* console.log(res) */
-//                }
-//            }
-//            console.log(res)
-//        }
-//        arrs(first, second)
-//        console.log(first, second)
-//    }
-//}
+package com.company;
+
+import java.util.Arrays;
+
+public class lot {
+    public static void main(String[] args) {
+        int[] arrayLottery = new int[7];
+        for (int i = 0; i < arrayLottery.length; i++) {
+            arrayLottery[i] = (int) (Math.random() * 9);
+        }
+        Arrays.sort(arrayLottery, 0, 7);
+        System.out.print(Arrays.toString(arrayLottery) + "\t\n");
+        int[] arrayPlayer = new int[7];
+        for (int i = 0; i < arrayPlayer.length; i++) {
+            arrayPlayer[i] = (int) (Math.random() * 10);
+        }
+        Arrays.sort(arrayPlayer, 0, 7);
+        System.out.print(Arrays.toString(arrayPlayer) + "\t\n");
+        int count = 0;
+        for (int i = 0; i < arrayLottery.length; i++) {
+            if (arrayLottery[i] == arrayPlayer[i]) {
+                count++;
+            }
+        }
+        System.out.println("Кількість збігів: " + count);
+    }
+}
